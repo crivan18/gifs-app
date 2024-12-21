@@ -26,7 +26,5 @@ export class SearchBoxComponent {
     this.gifsService.searchTag(this.tagInput.nativeElement.value);
 
     this.tagInput.nativeElement.value = '';
-
-    console.log(this.gifsService.tagsHistory);
   }
 }

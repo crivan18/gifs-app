@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Gifs } from '../../interfaces/gifs.interfaces';
 
 @Component({
   selector: 'gifs-card-list',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: './card-list.component.html',
 })
 export class CardListComponent {
+  @Input()
+  public gifs: Gifs[] = [];
 
 }
